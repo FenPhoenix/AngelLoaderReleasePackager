@@ -28,6 +28,7 @@ sealed partial class MainForm
     /// </summary>
     private void InitializeComponent()
     {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
         ReleaseNotesRawTextBox = new System.Windows.Forms.TextBox();
         ReleaseNotesTTLGTextBox = new System.Windows.Forms.TextBox();
         ReleaseNotesRawLabel = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@ sealed partial class MainForm
         PushUpdateToServerButton = new System.Windows.Forms.Button();
         ManualWorkLabel = new System.Windows.Forms.Label();
         Test1Button = new System.Windows.Forms.Button();
+        ReleaseNotesHelpLabel = new System.Windows.Forms.Label();
         ((System.ComponentModel.ISupportInitialize)MarkdownHTMLWebView).BeginInit();
         SuspendLayout();
         // 
@@ -77,9 +79,9 @@ sealed partial class MainForm
         ReleaseNotesRawLabel.Location = new System.Drawing.Point(19, 16);
         ReleaseNotesRawLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
         ReleaseNotesRawLabel.Name = "ReleaseNotesRawLabel";
-        ReleaseNotesRawLabel.Size = new System.Drawing.Size(308, 15);
+        ReleaseNotesRawLabel.Size = new System.Drawing.Size(286, 15);
         ReleaseNotesRawLabel.TabIndex = 0;
-        ReleaseNotesRawLabel.Text = "Release notes (raw style, will be converted to Markdown):";
+        ReleaseNotesRawLabel.Text = "Release notes (raw*, will be converted to Markdown):";
         // 
         // ReleaseNotesTTLGLabel
         // 
@@ -217,11 +219,20 @@ sealed partial class MainForm
         Test1Button.UseVisualStyleBackColor = true;
         Test1Button.Click += Test1Button_Click;
         // 
+        // ReleaseNotesHelpLabel
+        // 
+        ReleaseNotesHelpLabel.Location = new System.Drawing.Point(1288, 368);
+        ReleaseNotesHelpLabel.Name = "ReleaseNotesHelpLabel";
+        ReleaseNotesHelpLabel.Size = new System.Drawing.Size(376, 336);
+        ReleaseNotesHelpLabel.TabIndex = 13;
+        ReleaseNotesHelpLabel.Text = resources.GetString("ReleaseNotesHelpLabel.Text");
+        // 
         // MainForm
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(1670, 725);
+        Controls.Add(ReleaseNotesHelpLabel);
         Controls.Add(Test1Button);
         Controls.Add(ManualWorkLabel);
         Controls.Add(Found64BitLabel);
@@ -264,4 +275,5 @@ sealed partial class MainForm
     private System.Windows.Forms.Button PushUpdateToServerButton;
     private System.Windows.Forms.Label ManualWorkLabel;
     private System.Windows.Forms.Button Test1Button;
+    private System.Windows.Forms.Label ReleaseNotesHelpLabel;
 }

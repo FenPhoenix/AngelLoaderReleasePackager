@@ -117,4 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ReleaseNotesHelpLabel.Text" xml:space="preserve">
+    <value>* "Raw" release notes are written as follows:
+
+Headers end with a colon (:)
+Headers are optional
+Items start with a - (no spaces before or after)
+
+Example:
+
+General:
+-Added support for Sneaky Upgrade 1.1.12.
+-Language files are now re-read whenever the Settings window is opened, allowing new ones to be added without restarting the app. This also improves startup time when many languages are installed.
+
+Fixes:
+-For The Dark Mod 2.13, Training Mission authors are now detected again.
+-Fixed Dark Mod screenshot list auto-refresh was broken when screenshots directory didn't yet exist and then was created by the first screenshot being taken.</value>
+  </data>
 </root>
