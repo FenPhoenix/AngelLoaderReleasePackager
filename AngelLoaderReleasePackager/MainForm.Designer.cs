@@ -79,9 +79,9 @@ sealed partial class MainForm
         ReleaseNotesRawLabel.Location = new System.Drawing.Point(19, 16);
         ReleaseNotesRawLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
         ReleaseNotesRawLabel.Name = "ReleaseNotesRawLabel";
-        ReleaseNotesRawLabel.Size = new System.Drawing.Size(286, 15);
+        ReleaseNotesRawLabel.Size = new System.Drawing.Size(314, 15);
         ReleaseNotesRawLabel.TabIndex = 0;
-        ReleaseNotesRawLabel.Text = "Release notes (raw*, will be converted to Markdown):";
+        ReleaseNotesRawLabel.Text = "Input release notes (raw*, will be converted to Markdown):";
         // 
         // ReleaseNotesTTLGLabel
         // 
@@ -89,9 +89,9 @@ sealed partial class MainForm
         ReleaseNotesTTLGLabel.Location = new System.Drawing.Point(656, 16);
         ReleaseNotesTTLGLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
         ReleaseNotesTTLGLabel.Name = "ReleaseNotesTTLGLabel";
-        ReleaseNotesTTLGLabel.Size = new System.Drawing.Size(120, 15);
+        ReleaseNotesTTLGLabel.Size = new System.Drawing.Size(212, 15);
         ReleaseNotesTTLGLabel.TabIndex = 4;
-        ReleaseNotesTTLGLabel.Text = "Release notes (TTLG):";
+        ReleaseNotesTTLGLabel.Text = "Release notes (paste into TTLG thread):";
         // 
         // ReleaseNotesServerTextBox
         // 
@@ -111,9 +111,9 @@ sealed partial class MainForm
         ReleaseNotesServerLabel.Location = new System.Drawing.Point(656, 368);
         ReleaseNotesServerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
         ReleaseNotesServerLabel.Name = "ReleaseNotesServerLabel";
-        ReleaseNotesServerLabel.Size = new System.Drawing.Size(164, 15);
+        ReleaseNotesServerLabel.Size = new System.Drawing.Size(384, 15);
         ReleaseNotesServerLabel.TabIndex = 6;
-        ReleaseNotesServerLabel.Text = "Release notes (server version):";
+        ReleaseNotesServerLabel.Text = "Release notes as they will appear in the changelog on the update server:";
         // 
         // CreateReleaseButton
         // 
@@ -143,9 +143,9 @@ sealed partial class MainForm
         ReleaseNotesHTMLLabel.Location = new System.Drawing.Point(16, 368);
         ReleaseNotesHTMLLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
         ReleaseNotesHTMLLabel.Name = "ReleaseNotesHTMLLabel";
-        ReleaseNotesHTMLLabel.Size = new System.Drawing.Size(203, 15);
+        ReleaseNotesHTMLLabel.Size = new System.Drawing.Size(277, 15);
         ReleaseNotesHTMLLabel.TabIndex = 2;
-        ReleaseNotesHTMLLabel.Text = "Release notes (Markdown via HTML):";
+        ReleaseNotesHTMLLabel.Text = "Release notes visual preview (Markdown via HTML)";
         // 
         // Found32BitLabel
         // 
@@ -185,9 +185,9 @@ sealed partial class MainForm
         ReleaseNotesMarkdownLabel.Location = new System.Drawing.Point(968, 16);
         ReleaseNotesMarkdownLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
         ReleaseNotesMarkdownLabel.Name = "ReleaseNotesMarkdownLabel";
-        ReleaseNotesMarkdownLabel.Size = new System.Drawing.Size(240, 15);
+        ReleaseNotesMarkdownLabel.Size = new System.Drawing.Size(224, 15);
         ReleaseNotesMarkdownLabel.TabIndex = 4;
-        ReleaseNotesMarkdownLabel.Text = "Release notes (Markdown / GitHub Release):";
+        ReleaseNotesMarkdownLabel.Text = "Release notes (paste into GitHub release):";
         // 
         // PushUpdateToServerButton
         // 
